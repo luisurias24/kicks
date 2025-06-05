@@ -1,0 +1,270 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Open+Sans:wght@400&family=Bebas+Neue&display=swap');
+
+* {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Open Sans', sans-serif;
+      background: linear-gradient(to right, #340016, #020001);
+      color: #FE6C2B;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    header {
+      background-color: #020001;
+      padding: 20px 50px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo a {
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 700;
+      color: #FE6C2B;
+      text-decoration: none;
+      font-size: 1.8rem;
+    }
+#more-products {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+  
+}
+.product-list,
+#more-products {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+    nav a {
+      margin-left: 30px;
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 700;
+      text-decoration: none;
+      color: #FE6C2B;
+      transition: color 0.3s;
+    }
+
+    nav a.active,
+    nav a:hover {
+      color: #D43B2D;
+    }
+
+    .cart-icon {
+      position: relative;
+      cursor: pointer;
+      margin-left: 20px;
+      font-size: 1.6rem;
+      color: #FE6C2B;
+      user-select: none;
+      transition: color 0.3s;
+    }
+
+    .cart-icon:hover {
+      color: #D43B2D;
+    }
+
+    .cart-count {
+      position: absolute;
+      top: -10px;
+      right: -10px;
+      background: #D43B2D;
+      color: white;
+      border-radius: 50%;
+      padding: 2px 6px;
+      font-size: 0.75rem;
+      font-weight: 700;
+      font-family: 'Montserrat', sans-serif;
+    }
+
+    section.products {
+      padding: 50px;
+      flex-grow: 1;
+      background: linear-gradient(to bottom, #020001, #340016);
+    }
+
+    section.products h2 {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 2.5rem;
+      text-align: center;
+      margin-bottom: 40px;
+      color: #FE6C2B;
+      text-shadow: 1px 1px 3px #000;
+    }
+
+    .product-list {
+      display: grid;
+      grid-template-columns: repeat(3, 250px); /* fijo 3 columnas de 250px */
+  justify-content: center;
+      gap: 30px;
+    }
+
+    .product {
+      background: linear-gradient(145deg, #9F102C, #D43B2D);
+      border-radius: 20px;
+      padding: 20px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.6);
+      text-align: center;
+      color: #FE6C2B;
+      transition: transform 0.3s;
+       max-width: 250px;
+  width: 100%;
+    }
+
+    .product:hover {
+      transform: scale(1.05);
+      box-shadow: 0 10px 30px #D43B2D;
+    }
+
+    .product img {
+      width: 100%;
+      border-radius: 12px;
+      box-shadow: 0 5px 15px #020001;
+    }
+
+    .product h3 {
+      margin: 15px 0 10px;
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 700;
+      font-size: 1.5rem;
+      color: #FE6C2B;
+      text-shadow: 1px 1px 2px #340016;
+    }
+
+    .product p {
+      font-size: 1.2rem;
+      color: #FFB86C;
+      margin-bottom: 15px;
+      font-weight: 600;
+      text-shadow: 0 0 2px #020001;
+    }
+
+    button {
+      font-family: 'Bebas Neue', cursive;
+      background-color: #FE6C2B;
+      color: #020001;
+      border: none;
+      border-radius: 12px;
+      padding: 10px 25px;
+      font-size: 1.2rem;
+      cursor: pointer;
+      transition: background-color 0.3s, color 0.3s;
+      box-shadow: 0 4px 8px #9F102C;
+      user-select: none;
+    }
+
+    button:hover {
+      background-color: #D43B2D;
+      color: #fff;
+      box-shadow: 0 6px 12px #FE6C2B;
+    }
+
+    .cart-summary {
+      display: none;
+      position: fixed;
+      top: 80px;
+      right: 20px;
+      width: 320px;
+      background: #340016;
+      border: 1px solid #9F102C;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.7);
+      padding: 20px;
+      border-radius: 15px;
+      z-index: 100;
+      color: #FE6C2B;
+      font-family: 'Open Sans', sans-serif;
+    }
+
+    .cart-summary h3 {
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 700;
+      margin-bottom: 15px;
+      color: #FE6C2B;
+      text-align: center;
+      text-shadow: 1px 1px 2px #020001;
+    }
+
+    .cart-summary ul {
+      list-style: none;
+      padding: 0;
+      max-height: 200px;
+      overflow-y: auto;
+    }
+
+    .cart-summary ul li {
+      margin-bottom: 12px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-weight: 600;
+      color: #FFB86C;
+    }
+
+    .cart-summary ul li button {
+      background: #D43B2D;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      padding: 4px 8px;
+      cursor: pointer;
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 700;
+      transition: background-color 0.3s;
+    }
+
+    .cart-summary ul li button:hover {
+      background: #FE6C2B;
+      color: #020001;
+    }
+
+    .total-line {
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 700;
+      font-size: 1.3rem;
+      margin-top: 15px;
+      text-align: right;
+      color: #FE6C2B;
+      text-shadow: 1px 1px 3px #020001;
+    }
+
+    .cart-summary a button {
+      font-family: 'Bebas Neue', cursive;
+      background-color: #FE6C2B;
+      color: #020001;
+      border: none;
+      border-radius: 12px;
+      padding: 12px 0;
+      width: 100%;
+      font-size: 1.4rem;
+      margin-top: 10px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+      box-shadow: 0 5px 10px #9F102C;
+      user-select: none;
+    }
+
+    .cart-summary a button:hover {
+      background-color: #D43B2D;
+      color: #fff;
+      box-shadow: 0 7px 14px #FE6C2B;
+    }
+
+    footer.footer {
+      background-color: #020001;
+      color: #FE6C2B;
+      text-align: center;
+      padding: 20px 10px;
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 700;
+      font-size: 1rem;
+      box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.5);
+    }

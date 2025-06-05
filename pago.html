@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>Finalizar Compra - Kick Store</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+ <link rel="stylesheet" href="stylepago.css">
+</head>
+<body>
+  <header>
+    <div class="logo"><a href="index.html">Kick Store</a></div>
+    <nav>
+      <a href="index.html">Inicio</a>
+      <a href="productos.html">Productos</a>
+      <a href="info.html">Información</a>
+      <a href="contactos.html">Contacto</a>
+      <span class="cart-icon">
+        🛒<span class="cart-count" id="cart-count">0</span>
+      </span>
+    </nav>
+  </header>
+
+  <main>
+    <div class="checkout-form">
+      <h2>Datos de envío y pago</h2>
+      <form id="paymentForm">
+        <label for="name">Nombre completo</label>
+        <input type="text" id="name" required />
+
+        <label for="address">Dirección</label>
+        <input type="text" id="address" required />
+
+        <label for="card">Número de tarjeta</label>
+        <input
+          type="text"
+          id="card"
+          required
+          maxlength="16"
+          placeholder="**** **** **** ****"
+          pattern="\d{16}"
+          title="Ingrese un número de tarjeta válido de 16 dígitos"
+        />
+
+        <label for="exp">Fecha de vencimiento</label>
+        <input
+          type="text"
+          id="exp"
+          required
+          placeholder="MM/AA"
+          pattern="^(0[1-9]|1[0-2])\/\d{2}$"
+          title="Ingrese fecha en formato MM/AA"
+        />
+
+        <label for="cvv">CVV</label>
+        <input
+          type="text"
+          id="cvv"
+          required
+          maxlength="4"
+          pattern="\d{3,4}"
+          title="Ingrese un CVV válido de 3 o 4 dígitos"
+        />
+
+        <button type="submit">Confirmar Pago</button>
+      </form>
+    </div>
+
+    <div class="summary">
+      <h2>Resumen del Pedido</h2>
+      <ul id="cartSummaryList"></ul>
+      <p class="total-line">
+        Total: $<span id="cartSummaryTotal">0</span> MXN
+      </p>
+    </div>
+  </main>
+
+  <footer>
+    &copy; 2025 Kick Store - Todos los derechos reservados
+  </footer>
+
+ 
+  <script src="scriptpago.js"></script>
+</body>
+</html>

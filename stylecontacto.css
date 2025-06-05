@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Open+Sans:wght@400&family=Bebas+Neue&display=swap');
+
+* {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Open Sans', sans-serif;
+      background: linear-gradient(to right, #340016, #020001);
+      color: #FE6C2B;
+    }
+
+    header {
+      background: #020001;
+      color: #FE6C2B;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 50px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    }
+
+    .logo {
+      width: 120px;
+      height: 60px;
+      background-color: #FE6C2B;
+      border-radius: 8px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-family: 'Montserrat', sans-serif;
+      font-weight: bold;
+      color: #020001;
+    }
+
+    nav a {
+      margin-left: 30px;
+      text-decoration: none;
+      color: #FE6C2B;
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 700;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #D43B2D;
+    }
+
+    .page-header {
+      text-align: center;
+      margin: 40px 0;
+    }
+
+    .page-header h1 {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 2.5rem;
+      color: #FE6C2B;
+    }
+
+    .contact-container {
+      background-color: #340016;
+      max-width: 600px;
+      margin: auto;
+      padding: 30px;
+      border-radius: 15px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+    }
+
+    .contact-container h2 {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 1.8rem;
+      margin-bottom: 20px;
+      color: #FE6C2B;
+    }
+
+    .contact-item {
+      margin-bottom: 20px;
+    }
+
+    .contact-item label {
+      font-weight: bold;
+      display: block;
+      margin-bottom: 5px;
+      color: #D43B2D;
+      font-family: 'Montserrat', sans-serif;
+    }
+
+    .contact-item p {
+      color: #f5f5f5;
+    }
+
+    .quote {
+      font-family: 'Bebas Neue', cursive;
+      font-style: normal;
+      margin-top: 40px;
+      color: #9F102C;
+      text-align: center;
+      font-size: 1.6rem;
+    }
+    .footer {
+  width: 100%;
+  background-color: #020001;
+  color: #FE6C2B;
+  text-align: center;
+  padding: 30px 20px;
+  font-family: 'Open Sans', sans-serif;
+  box-sizing: border-box;
+}

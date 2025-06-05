@@ -1,0 +1,207 @@
+  @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Open+Sans:wght@400&family=Bebas+Neue&display=swap');
+
+  * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: 'Open Sans', sans-serif;
+    }
+
+    body {
+      background: linear-gradient(to bottom, #020001, #340016);
+      color: #FE6C2B;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    header {
+      background-color: #020001;
+      padding: 20px 50px;
+      color: #FE6C2B;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.8);
+    }
+
+    header .logo a {
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 700;
+      font-size: 1.8rem;
+      color: #FE6C2B;
+      text-decoration: none;
+      user-select: none;
+    }
+
+    nav {
+      display: flex;
+      align-items: center;
+    }
+
+    nav a {
+      margin-left: 30px;
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 700;
+      color: #FE6C2B;
+      text-decoration: none;
+      transition: color 0.3s;
+      user-select: none;
+    }
+
+    nav a:hover {
+      color: #D43B2D;
+    }
+
+    nav a.active {
+      color: #D43B2D;
+      text-decoration: underline;
+    }
+
+    .cart-icon {
+      position: relative;
+      cursor: pointer;
+      margin-left: 20px;
+      font-size: 1.6rem;
+      color: #FE6C2B;
+      user-select: none;
+      transition: color 0.3s;
+    }
+
+    .cart-icon:hover {
+      color: #D43B2D;
+    }
+
+    .cart-count {
+      position: absolute;
+      top: -10px;
+      right: -10px;
+      background: #D43B2D;
+      color: white;
+      border-radius: 50%;
+      padding: 2px 6px;
+      font-size: 0.75rem;
+      font-weight: 700;
+      font-family: 'Montserrat', sans-serif;
+    }
+
+    main {
+      max-width: 900px;
+      margin: 40px auto;
+      display: flex;
+      gap: 40px;
+      background: #340016;
+      padding: 30px;
+      border-radius: 15px;
+      box-shadow: 0 8px 20px #020001;
+      color: #FE6C2B;
+      user-select: none;
+    }
+
+    .checkout-form, .summary {
+      flex: 1;
+    }
+
+    h2 {
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 700;
+      margin-bottom: 20px;
+      color: #FE6C2B;
+      text-shadow: 1px 1px 3px #020001;
+    }
+
+    .summary ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      max-height: 350px;
+      overflow-y: auto;
+    }
+
+    .summary li {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 12px;
+      font-weight: 600;
+      color: #FFB86C;
+      text-shadow: 0 0 2px #020001;
+    }
+
+    label {
+      display: block;
+      margin: 15px 0 5px;
+      font-weight: 600;
+      font-family: 'Montserrat', sans-serif;
+      color: #FE6C2B;
+      text-shadow: 1px 1px 2px #020001;
+      user-select: text;
+    }
+
+    input {
+      width: 100%;
+      padding: 12px;
+      border: 1px solid #9F102C;
+      border-radius: 8px;
+      font-size: 1rem;
+      background-color: #020001;
+      color: #FE6C2B;
+      transition: border-color 0.3s;
+      user-select: text;
+    }
+
+    input::placeholder {
+      color: #9F102C;
+    }
+
+    input:focus {
+      outline: none;
+      border-color: #FE6C2B;
+      box-shadow: 0 0 8px #FE6C2B;
+      background-color: #340016;
+    }
+
+    button {
+      font-family: 'Bebas Neue', cursive;
+      background-color: #FE6C2B;
+      color: #020001;
+      padding: 15px;
+      width: 100%;
+      border: none;
+      border-radius: 10px;
+      font-size: 1.3rem;
+      cursor: pointer;
+      box-shadow: 0 4px 10px #9F102C;
+      transition: background-color 0.3s, color 0.3s;
+      user-select: none;
+    }
+
+    button:hover {
+      background-color: #D43B2D;
+      color: #fff;
+      box-shadow: 0 6px 15px #FE6C2B;
+    }
+
+    .total-line {
+      border-top: 1px solid #9F102C;
+      padding-top: 10px;
+      margin-top: 10px;
+      font-weight: 700;
+      font-family: 'Montserrat', sans-serif;
+      font-size: 1.4rem;
+      color: #FE6C2B;
+      text-shadow: 1px 1px 3px #020001;
+      user-select: text;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #020001;
+      color: #FE6C2B;
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 700;
+      font-size: 1rem;
+      user-select: none;
+      box-shadow: 0 -2px 5px rgba(0,0,0,0.7);
+      margin-top: 40px;
+    }

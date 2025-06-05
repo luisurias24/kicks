@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Productos - Kick Store</title>
+  <link rel="stylesheet" href="styleproducto.css">
+</head>
+<body>
+  <header>
+    <div class="logo"><a href="index.html">KickStore</a></div>
+    <nav>
+      <a href="index.html">Inicio</a>
+      <a href="productos.html" class="active">Productos</a>
+      <a href="info.html">Información</a>
+      <a href="contactos.html">Contacto</a>
+      <span class="cart-icon" onclick="toggleCart()">
+        🛒<span class="cart-count" id="cart-count">0</span>
+      </span>
+    </nav>
+  </header>
+
+  <section class="products">
+  <h2>Compra tus Tenis</h2>
+  <div class="product-list">
+    <div class="product">
+      <img src="hola1.jpg" alt="Tenis Urbanos" />
+      <h3>Tenis Urbanos</h3>
+      
+      <button class="show-more-btn" data-product="urbanos">Mostrar más productos</button>
+       <div class="extra-products-container"></div> 
+    </div>
+    <div class="product">
+      <img src="hola2.jpg" alt="Tenis Deportivos" />
+      <h3>Tenis Deportivos</h3>
+      
+      <button class="show-more-btn" data-product="deportivos">Mostrar más productos</button>
+       <div class="extra-products-container"></div> 
+    </div>
+    <div class="product">
+      <img src="hola3.jpg" alt="Tenis Edición Limitada" />
+      <h3>Tenis Edición Limitada</h3>
+     
+      <button class="show-more-btn" data-product="exclusivos">Mostrar más productos</button>
+       <div class="extra-products-container"></div> 
+    </div>
+  </div>
+
+  <!-- Productos ocultos al inicio -->
+  <div id="more-products" style="display:none; margin-top:30px;">
+    <div class="product">
+      <img src="hola4.jpg" alt="Tenis Clásicos" />
+      <h3>Tenis Clásicos</h3>
+      <p>$1,000 MXN</p>
+      <button onclick="addToCart('Tenis Clásicos', 1000)">Agregar al carrito</button>
+    </div>
+    <div class="product">
+      <img src="hola5.jpg" alt="Tenis para correr" />
+      <h3>Tenis para correr</h3>
+      <p>$1,700 MXN</p>
+      <button onclick="addToCart('Tenis para correr', 1700)">Agregar al carrito</button>
+    </div>
+    <div class="product">
+      <img src="hola6.jpg" alt="Tenis Retro" />
+      <h3>Tenis Retro</h3>
+      <p>$1,400 MXN</p>
+      <button onclick="addToCart('Tenis Retro', 1400)">Agregar al carrito</button>
+    </div>
+  </div>
+</section>
+
+
+  <div class="cart-summary" id="cart-summary">
+    <h3>Carrito de Compras</h3>
+    <ul id="cart-items"></ul>
+    <p class="total-line"><strong>Total:</strong> $<span id="cart-total">0</span> MXN</p>
+    <a href="pago.html">
+      <button>Pagar</button>
+    </a>
+  </div>
+
+  <footer class="footer">
+    <p>&copy; 2025 Kick Store - Todos los derechos reservados</p>
+  </footer>
+
+  <script src="scriptproductos.js"></script>
+</body>
+</html>

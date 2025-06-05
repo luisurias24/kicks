@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Open+Sans:wght@400&family=Bebas+Neue&display=swap');
+
+* {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: 'Open Sans', sans-serif;
+      user-select: none;
+    }
+
+    body {
+      background: linear-gradient(to bottom, #020001, #340016);
+      color: #FE6C2B;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      font-size: 1rem;
+      line-height: 1.6;
+      padding: 20px;
+    }
+
+    header {
+      background-color: #020001;
+      padding: 20px 50px;
+      color: #FE6C2B;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.8);
+      user-select: none;
+      border-radius: 10px;
+    }
+
+    .logo {
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 700;
+      font-size: 1.8rem;
+      color: #FE6C2B;
+      user-select: none;
+    }
+
+    nav {
+      display: flex;
+      gap: 30px;
+    }
+
+    nav a {
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 700;
+      color: #FE6C2B;
+      text-decoration: none;
+      transition: color 0.3s;
+      user-select: none;
+    }
+
+    nav a:hover {
+      color: #D43B2D;
+    }
+
+    nav a.active {
+      color: #D43B2D;
+      text-decoration: underline;
+      cursor: default;
+    }
+
+    section.info-page {
+      max-width: 900px;
+      margin: 40px auto;
+      background: #340016;
+      padding: 30px 40px;
+      border-radius: 15px;
+      box-shadow: 0 8px 20px #020001;
+      color: #FE6C2B;
+      user-select: text;
+    }
+
+    section.info-page h1,
+    section.info-page h2 {
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 700;
+      margin-bottom: 15px;
+      text-shadow: 1px 1px 3px #020001;
+    }
+
+    section.info-page h1 {
+      font-size: 2.5rem;
+    }
+
+    section.info-page h2 {
+      font-size: 1.8rem;
+      margin-top: 30px;
+    }
+
+    section.info-page p {
+      margin-bottom: 20px;
+      font-size: 1.1rem;
+      line-height: 1.7;
+      color: #FFB86C;
+      text-shadow: 0 0 3px #020001;
+    }
+
+    section.info-page strong {
+      color: #FE6C2B;
+      font-weight: 700;
+    }
+
+    section.info-page ul {
+      list-style: inside disc;
+      color: #FFB86C;
+      margin-left: 20px;
+      font-size: 1.1rem;
+      line-height: 1.7;
+      text-shadow: 0 0 3px #020001;
+      user-select: text;
+    }
+
+    section.info-page ul li {
+      margin-bottom: 10px;
+    }
+
+    footer.footer {
+      text-align: center;
+      padding: 20px;
+      background: #020001;
+      color: #FE6C2B;
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 700;
+      font-size: 1rem;
+      margin-top: auto;
+      user-select: none;
+      box-shadow: 0 -2px 5px rgba(0,0,0,0.7);
+      border-radius: 10px;
+      max-width: 900px;
+      margin-left: auto;
+      margin-right: auto;
+    }

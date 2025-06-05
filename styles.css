@@ -1,0 +1,227 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Open+Sans:wght@400&family=Bebas+Neue&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  background: linear-gradient(to right, #340016, #020001);
+  color: #FE6C2B;
+}
+
+header {
+  background: #020001;
+  color: #FE6C2B;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 50px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+}
+
+.logo {
+  width: 120px;
+  height: 60px;
+  background-color: #FE6C2B;
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  color: #020001;
+}
+
+nav a {
+  margin-left: 30px;
+  text-decoration: none;
+  color: #FE6C2B;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  transition: color 0.3s;
+}
+
+nav a:hover {
+  color: #D43B2D;
+}
+
+.login-section {
+  padding: 40px;
+  text-align: center;
+  background-color: #340016;
+  color: #FE6C2B;
+}
+
+.login-section h2 {
+  margin-bottom: 20px;
+  font-family: 'Montserrat', sans-serif;
+}
+header nav {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+}
+.login-section form input {
+  padding: 10px;
+  margin: 10px;
+  width: 200px;
+  border-radius: 8px;
+  border: 1px solid #9F102C;
+  background-color: #020001;
+  color: #FE6C2B;
+}
+
+.login-section form button {
+  padding: 10px 20px;
+  background-color: #9F102C;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.user-info {
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  background-color: #D43B2D;
+  color: white;
+  margin: 20px;
+  border-radius: 12px;
+}
+
+.user-avatar {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  border: 2px solid #FE6C2B;
+}
+
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 80px 50px;
+  background: linear-gradient(135deg, #9F102C, #D43B2D);
+  color: white;
+}
+
+.hero-text {
+  max-width: 600px;
+}
+
+.hero-text h1 {
+  font-size: 3em;
+  margin-bottom: 20px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.hero-text p {
+  font-size: 1.2em;
+}
+
+.hero img {
+  width: 400px;
+  border-radius: 20px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.4);
+}
+
+.products {
+  padding: 50px;
+  background-color: #340016;
+  color: #FE6C2B;
+}
+
+.products h2 {
+  text-align: center;
+  font-size: 2em;
+  margin-bottom: 40px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.product-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+}
+
+.product {
+  background: linear-gradient(to bottom right, #020001, #340016);
+  border-radius: 20px;
+  padding: 20px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+  text-align: center;
+}
+
+.product img {
+  width: 100%;
+  border-radius: 12px;
+}
+
+.product h3 {
+  margin: 15px 0 10px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.product p {
+  color: #f9f9f9;
+}
+
+.footer {
+  background-color: #020001;
+  color: #FE6C2B;
+  text-align: center;
+  padding: 30px;
+  font-family: 'Open Sans', sans-serif;
+}
+#welcomeMessage {
+  font-family: 'Montserrat', sans-serif;
+  text-align: center;
+  color: #000000;
+  font-size: 1.3rem;
+  line-height: 1.6;
+}
+
+.mensaje-extra {
+  display: block;
+  margin-top: 10px;
+  color: #f0f0f0;
+  font-size: 1rem;
+}
+.user-info {
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+#logoutButton {
+  padding: 10px 25px;
+  background: linear-gradient(135deg, #9F102C, #D43B2D);
+  color: #fff;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+#logoutButton:hover {
+  background: linear-gradient(135deg, #D43B2D, #FE6C2B);
+  transform: scale(1.05);
+}
+.user-avatar {
+  width: 80px;
+  height: 80px;
+  border-radius: 12px; /* menos redondo, más cuadrado */
+  border: 2px solid #FE6C2B;
+  object-fit: cover;
+}
